@@ -1,0 +1,15 @@
+{
+  "name": "pg-zwift-log-plugin",
+  "version": "0.0.1",
+  "description": "Send Zwift log data to Pedal Games",
+  "module": "emitter/index.mjs",
+  "scripts": {
+    "start": "node emitter/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "zwift-log-monitor": "github:zwfthcks/zwift-log-monitor"
+  }
+}

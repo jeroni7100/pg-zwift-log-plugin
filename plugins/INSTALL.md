@@ -1,0 +1,1 @@
+Copy the json file to a location under %userprofile%\pedal-games\plugins so the app can find them at launch.
