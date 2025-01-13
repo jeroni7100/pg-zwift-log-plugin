@@ -4,40 +4,20 @@
 	"version": "0.1",
 	"description": "Output a chat message (string)",
 	"name": "Plugin jrn/zwiftlog-chat",
-	"template": "block-text",
-	"fields": [
-		{
-			"id": "field1",
-			// "label": "Field 1",
-			"sublabel": "Chat",
-			//"unit": "unit 2",
-			"type": "text",
+	"template": "block",
+	"fields": [ '$zwiftlog/chat' ],
+    "fieldDefinitions": {
+        "$zwiftlog/chat": {
+            "label": "Chat",
+			"sublabel": "Messages:",
+			// "unit": "unit 2",
 			"value": "zwiftlog/chat",
-			"description": "Chat",
-			"color": "blue",
-			"width": 100,
-			"lines": 10,
-		}
-	]
+			// "description": "Description 2",
+			// "color": "blue",
+            "lines": 3,
+            "style": "width: 600px; height: 200px; --field-font-size: 10px; --field-line-height: 12px; --field-font-weight: normal;",
+            "order": "reverse"
+        }
+	},
 }
 
-
-    // the plugin object is valid if it has the following properties:
-    // - id: A string that is not empty in the format xxx/yyy where xxx is the plugin author and yyy is the plugin name. The id must be unique among all plugins. xxx and yyy can only contain letters, numbers, '.', '-', and '_'
-    // - description: A string that is not empty
-    // - name: A string that is not empty
-    // - template: A string that is not empty (known template names are 'default', 'block', and 'bit') (optional)
-    // - fields: An array of objects where each object has the following properties:
-    //   - id: A string that is not empty
-    //   - label: A string that is not empty (optional)
-    //   - sublabel: A string that is not empty (optional)
-    //   - unit: A string that is not empty (optional)
-    //   - type: A string that is either 'text' or 'number' (optional)
-    //   - lines: A number that is greater than 0 (optional), default is 1
-    //   - width: A number that is greater than 0 (optional) (only for template '*-text'). Interpreted as an em value. Default is unset.
-    //   - chronological: A boolean (optional). If true, the field will be sorted chronologically, otherwise it will be sorted reverse chronologically
-    //   - value: A string that is not empty (mandatory). The string must be in the format xxx/yyy. xxx and yyy can only contain letters, numbers, '.', '-', and '_'
-    //   - description: A string that is not empty (optional)
-    //   - color: A string that is not empty (optional)
-
-    

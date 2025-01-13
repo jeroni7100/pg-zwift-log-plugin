@@ -1,0 +1,9 @@
+{
+	"id": "jrn/zwiftlog-misc",
+	"author": "Jesper Nielsen",
+	"version": "0.1",
+	"description": "Output a misc. data from Zwift log",
+	"name": "Plugin jrn/zwiftlog-misc",
+	"template": "block",
+	"fields": [ "zwiftlog/pacepartner", "zwiftlog/world", "zwiftlog/sport", "zwiftlog/steeringmode", "zwiftlog/gameversion"]
+}
