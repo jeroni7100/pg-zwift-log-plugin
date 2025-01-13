@@ -2,8 +2,35 @@
 	"id": "jrn/zwiftlog-misc",
 	"author": "Jesper Nielsen",
 	"version": "0.1",
-	"description": "Output a misc. data from Zwift log",
+	"description": "Output misc. data from Zwift log",
 	"name": "Plugin jrn/zwiftlog-misc",
 	"template": "block",
-	"fields": [ "zwiftlog/pacepartner", "zwiftlog/world", "zwiftlog/sport", "zwiftlog/steeringmode", "zwiftlog/gameversion"]
+	"fields": [ "$zwiftlog/pacepartner", "$zwiftlog/world", "$zwiftlog/sport", "$zwiftlog/steeringmode", "$zwiftlog/gameversion"],
+	"fieldDefinitions": {
+		"$zwiftlog/pacepartner": {
+			value: "zwiftlog/pacepartner",
+			"label": "Pace Partner",
+			"description": "The pace partner you are riding with"
+		},
+		"$zwiftlog/world": {
+			value: "zwiftlog/world",
+			"label": "World",
+			"description": "The world you are riding in"
+		},
+		"$zwiftlog/sport": {
+			value: "zwiftlog/sport",
+			"label": "Sport",
+			"description": "The sport you are doing"
+		},
+		"$zwiftlog/steeringmode": {
+			value: "zwiftlog/steeringmode",
+			"label": "Steering Mode",
+			"description": "The steering mode you are using"
+		},
+		"$zwiftlog/gameversion": {
+			value: "zwiftlog/gameversion",
+			"label": "Game Version",
+			"description": "The version of the game"
+		}
+	}
 }
