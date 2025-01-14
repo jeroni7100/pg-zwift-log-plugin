@@ -14,8 +14,8 @@
 			"value": "zwiftlog/chat",
 			// "description": "Description 2",
 			// "color": "blue",
-            "lines": 3,
-            "style": "width: 600px; height: 200px; --field-font-size: 10px; --field-line-height: 12px; --field-font-weight: normal;",
+            "lines": 9,
+            "style": "width: 600px; height: 210px; --field-font-size: 10px; --field-line-height: 12px; --field-font-weight: normal;",
             "order": "reverse"
         }
 	},
