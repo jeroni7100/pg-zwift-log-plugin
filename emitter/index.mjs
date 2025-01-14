@@ -113,7 +113,7 @@ zlm.on("info", async (info) => {
 });
 
 zlm.on("world", async (world) => {
-  console.log(info);
+  console.log(world);
   try {
     await sendData({world: world});
   } catch (error) {
@@ -122,7 +122,7 @@ zlm.on("world", async (world) => {
 });
 
 zlm.on("sport", async (sport) => {
-  console.log(info);
+  console.log(sport);
   try {
     await sendData({sport: sport});
   } catch (error) {
@@ -131,7 +131,7 @@ zlm.on("sport", async (sport) => {
 });
 
 zlm.on("steeringMode", async (steeringMode) => {
-  console.log(info);
+  console.log(steeringMode);
   try {
     await sendData({steeringMode: steeringMode});
   } catch (error) {
