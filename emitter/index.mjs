@@ -1,4 +1,4 @@
-import ZwiftLogMonitor from "zwift-log-monitor";
+import ZwiftLogMonitor from "@zwfthcks/zwift-log-monitor";
 import minimist from "minimist";
 
 const argv = minimist(process.argv.slice(2));
@@ -134,6 +134,51 @@ zlm.on("steeringMode", async (steeringMode) => {
   console.log(steeringMode);
   try {
     await sendData({steeringMode: steeringMode});
+  } catch (error) {
+    // console.error(error);
+  }
+});
+
+zlm.on("playerId", async (playerId) => {
+  console.log(playerId);
+  try {
+    await sendData({playerId: playerId});
+  } catch (error) {
+    // console.error(error);
+  }
+});
+
+zlm.on("pacePartner", async (pacePartner) => {
+  console.log(pacePartner);
+  try {
+    await sendData({pacePartner: pacePartner});
+  } catch (error) {
+    // console.error(error);
+  }
+});
+
+zlm.on("gameVersion", async (gameVersion) => {
+  console.log(gameVersion);
+  try {
+    await sendData({gameVersion: gameVersion});
+  } catch (error) {
+    // console.error(error);
+  }
+});
+
+zlm.on("rideon", async (rideon) => {
+  console.log(rideon);
+  try {
+    await sendData({rideon: rideon});
+  } catch (error) {
+    // console.error(error);
+  }
+});
+
+zlm.on("rideons", async (rideons) => {
+  console.log(rideons);
+  try {
+    await sendData({rideons: rideons});
   } catch (error) {
     // console.error(error);
   }
