@@ -10,6 +10,7 @@ let zlm = new ZwiftLogMonitor({
 zlm.on("ready", () => {
   if (argv.catchup) {
     catchupChat();
+    catchupRideOns();
     catchupWorld();
     catchupSport();
     catchupSteeringMode();
@@ -17,12 +18,6 @@ zlm.on("ready", () => {
     catchupPlayerId();
     catchupGameVersion();
   }
-
-  // let version = zlm.getGameVersion();
-  // let world = zlm.getWorld();
-  // let playerId = zlm.getPlayerid();
-  // let steeringMode = zlm.getSteeringMode();
-  // let sport = zlm.getSport();
 
   zlm.start();
 });
@@ -33,6 +28,18 @@ async function catchupChat() {
     messages.forEach(async (chat) => {
       console.log(formatChat(chat));
       await sendData({chat: formatChat(chat)});
+    });
+  } catch (error) {
+    // console.error(error);
+  }
+}
+
+async function catchupRideOns() {
+  try {
+    let messages = zlm.getAllRideOns();
+    messages.forEach(async (rideon) => {
+      console.log(rideon);
+      await sendData({rideon: rideon});
     });
   } catch (error) {
     // console.error(error);
@@ -256,3 +263,4 @@ function handleSendError(error, data) {
 function formatChat(chat) {
   return `(${chat.time}) ${chat.name || chat.user}: ${chat.message} (${chat.scope})`;
 }
+
