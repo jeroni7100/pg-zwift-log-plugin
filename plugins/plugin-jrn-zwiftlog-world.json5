@@ -1,12 +1,12 @@
 {
-	"id": "jrn/zwiftlog-misc",
+	"id": "jrn/zwiftlog-world",
 	"author": "Jesper Nielsen",
 	"version": "0.1",
-	"description": "Output misc. data from Zwift log",
-	"name": "Plugin jrn/zwiftlog-misc",
+	"description": "Output world data from Zwift log",
+	"name": "Plugin jrn/zwiftlog-world",
 	"tags": [ "zwiftlog" ],
 	"template": "block",
-	"fields": [ "$pacepartner", "$world", "$sport", "$steeringmode", "$gameversion"],
+	"fields": [ "$world" ],
 	"fieldDefinitions": {
 		"$pacepartner": {
 			value: "zwiftlog/pacepartner",

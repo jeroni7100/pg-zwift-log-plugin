@@ -4,6 +4,7 @@
 	"version": "0.1",
 	"description": "Output a chat message (string)",
 	"name": "Plugin jrn/zwiftlog-chat",
+	"tags": [ "zwiftlog" ],
 	"template": "block",
 	"fields": [ '$zwiftlog/chat' ],
     "fieldDefinitions": {
