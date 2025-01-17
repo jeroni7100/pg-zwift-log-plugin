@@ -6,7 +6,7 @@
 	"name": "Plugin jrn/zwiftlog-version",
 	"tags": [ "zwiftlog" ],
 	"template": "block",
-	"fields": [ "$version" ],
+	"fields": [ "$gameversion" ],
 	"fieldDefinitions": {
 		"$pacepartner": {
 			value: "zwiftlog/pacepartner",
