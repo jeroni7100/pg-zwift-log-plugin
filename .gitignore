@@ -2,3 +2,4 @@
 /.build
 /run-signtool.cmd
 /run-signtool-here.cmd
+/build
