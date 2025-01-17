@@ -1,0 +1,17 @@
+{
+	"id": "jrn/zwiftlog-rideon",
+	"author": "Jesper Nielsen",
+	"version": "0.1",
+	"description": "Output ride on data from Zwift log",
+	"name": "Plugin jrn/zwiftlog-rideon",
+	"tags": [ "zwiftlog" ],
+	"template": "block",
+	"fields": [ "$rideon" ],
+	"fieldDefinitions": {
+		"$rideon": {
+			value: "zwiftlog/rideonUser",
+			"label": "Ride On from",
+            "style": "width: 250px; --field-font-size: 16px;"
+		},
+	}
+}

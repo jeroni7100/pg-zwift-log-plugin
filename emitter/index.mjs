@@ -36,10 +36,10 @@ async function catchupChat() {
 
 async function catchupRideOns() {
   try {
-    let messages = zlm.getAllRideOns();
+    let messages = zlm.getAllRideons();
     messages.forEach(async (rideon) => {
       console.log(rideon);
-      await sendData({rideon: rideon});
+      await sendData({rideonTime: rideon.time, rideonUser: rideon.user});
     });
   } catch (error) {
     // console.error(error);
@@ -176,7 +176,7 @@ zlm.on("gameVersion", async (gameVersion) => {
 zlm.on("rideon", async (rideon) => {
   console.log(rideon);
   try {
-    await sendData({rideon: rideon});
+    await sendData({rideonTime: rideon.time, rideonUser: rideon.user});
   } catch (error) {
     // console.error(error);
   }
